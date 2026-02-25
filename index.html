@@ -1,117 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Smart Trading Hub</title>
+    <title>Elite Trading Pro</title>
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', sans-serif;
         }
 
-        .overlay {
-            background: rgba(0, 0, 0, 0.7);
-            min-height: 100vh;
-            padding: 40px;
+        body{
+            background: url('https://images.unsplash.com/photo-1642790106117-e829e14a795f') no-repeat center center/cover;
+            color:white;
         }
 
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 50px;
-            color: #00ffcc;
-        }
-
-        .content {
-            max-width: 900px;
-            margin: auto;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        h2 {
-            color: #00ffcc;
-        }
-
-        p {
-            line-height: 1.8;
-            font-size: 18px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #00ffcc;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        .btn:hover {
-            background: white;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
+        .overlay{
             background: rgba(0,0,0,0.8);
+            min-height:100vh;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            padding:20px 80px;
+            background: rgba(0,0,0,0.6);
+        }
+
+        nav h2{
+            color:#00ffcc;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:30px;
+            cursor:pointer;
+        }
+
+        nav ul li:hover{
+            color:#00ffcc;
+        }
+
+        .hero{
+            text-align:center;
+            padding:100px 20px;
+        }
+
+        .hero h1{
+            font-size:60px;
+            color:#00ffcc;
+        }
+
+        .hero p{
+            font-size:22px;
+            margin-top:20px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:30px;
+            padding:15px 35px;
+            background:#00ffcc;
+            color:black;
+            font-weight:bold;
+            border-radius:30px;
+            text-decoration:none;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:white;
+            transform:scale(1.05);
+        }
+
+        .section{
+            padding:80px 10%;
+            text-align:center;
+        }
+
+        .section h2{
+            font-size:40px;
+            margin-bottom:50px;
+            color:#00ffcc;
+        }
+
+        .cards{
+            display:flex;
+            justify-content:space-around;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.1);
+            backdrop-filter:blur(10px);
+            padding:30px;
+            width:300px;
+            border-radius:20px;
+            margin:20px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            background:rgba(0,255,204,0.2);
+        }
+
+        .card img{
+            width:100%;
+            border-radius:15px;
+            margin-bottom:20px;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:black;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="overlay">
+<div class="overlay">
 
-        <header>
-            <h1>Smart Trading Hub</h1>
-            <p>Learn. Trade. Grow.</p>
-        </header>
+    <nav>
+        <h2>Elite Trading Pro</h2>
+        <ul>
+            <li>Home</li>
+            <li>Markets</li>
+            <li>Strategies</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
 
-        <div class="content">
+    <div class="hero">
+        <h1>Master The Market</h1>
+        <p>Trade Smart. Grow Wealth. Build Your Financial Future.</p>
+        <a href="#" class="btn">Start Trading</a>
+    </div>
 
-            <h2>📈 What is Trading?</h2>
-            <p>
-                Trading is the process of buying and selling financial instruments like stocks, forex, 
-                cryptocurrencies, and commodities to earn profit. Traders analyze market trends, 
-                charts, and economic news to make decisions.
-            </p>
+    <div class="section">
+        <h2>🔥 Trading Markets</h2>
 
-            <h2>💹 Types of Trading</h2>
-            <p>
-                • Intraday Trading – Buying and selling within the same day.<br>
-                • Swing Trading – Holding stocks for a few days or weeks.<br>
-                • Long-Term Investing – Holding assets for months or years.<br>
-                • Crypto Trading – Trading digital currencies like Bitcoin and Ethereum.
-            </p>
+        <div class="cards">
 
-            <h2>📊 Why Learn Trading?</h2>
-            <p>
-                Trading helps you build financial knowledge, passive income opportunities, 
-                and wealth creation strategies. But remember — risk management is very important.
-            </p>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3">
+                <h3>Stock Market</h3>
+                <p>Buy and sell shares of companies to grow your capital.</p>
+            </div>
 
-            <a href="#" class="btn">Start Learning</a>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040">
+                <h3>Crypto Market</h3>
+                <p>Trade digital currencies like Bitcoin & Ethereum 24/7.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581090700227-1e8d8c9f8f1d">
+                <h3>Forex Trading</h3>
+                <p>Exchange currencies and profit from global market moves.</p>
+            </div>
 
         </div>
-
-        <footer>
-            © 2026 Smart Trading Hub | Built by Eshwar
-        </footer>
-
     </div>
+
+    <footer>
+        © 2026 Elite Trading Pro | Designed by Eshwar 🚀
+    </footer>
+
+</div>
 
 </body>
 </html>
